@@ -1,0 +1,20 @@
+@import './vars';
+
+.btn-primary {
+    background-color: $primary;
+
+    &:hover {
+        background-color: #fff;
+        color: $danger;
+    }
+}
+
+.btn-white {
+    background-color: #fff;
+    color: $danger;
+
+    &:hover {
+        background-color: $primary;
+        color: #fff;
+    }
+}
