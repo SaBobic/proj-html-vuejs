@@ -1,0 +1,39 @@
+header {
+  font-size: 17px;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  right: 60px;
+
+  img {
+    height: 70px;
+  }
+
+ .main-menu{
+  margin-right: 40px;
+
+  li{
+    margin-left: 25px;
+
+      .active{
+        color: $primary;
+      }
+      
+      .fa-sort-down{
+        font-size: 12px;
+        padding-left: 10px;
+      }
+    }
+  }
+  
+  #header-button {
+      padding: 20px 40px;
+      border-radius: 50px;
+      background-color: $primary;
+
+      &:hover{
+        background-color: #fff;
+        color: $danger;
+      }
+    }
+  }
