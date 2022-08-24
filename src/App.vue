@@ -57,7 +57,7 @@
       <section id="faculties">
         <h3>Faculties available at EduPrime</h3>
         <p>A single university with a load of course, tailored to satisfy any student's needs.</p>
-        <BoxesSlider />
+        <BoxesSlider :items="facultiesSliderItems" />
       </section>
 
     </main>
@@ -116,6 +116,48 @@ export default {
           anchor: 'Purchase',
           link: '#',
           sub: false,
+        },
+      ],
+      facultiesSliderItems: [
+        {
+          id: 1,
+          icon: 'Gavel-v2.png',
+          img: 'Gavel-Illustration-e1556884768193.png',
+          title: 'Law Faculty',
+          text: 'Learning from world-leading academics and practitioners, you’ll not only receive an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions.',
+          url: '#',
+        },
+        {
+          id: 2,
+          icon: 'Coins-tabs-v2.png',
+          img: 'Economy.png',
+          title: 'Economy',
+          text: 'Economics focuses on the behaviour and interactions of economic agents and how economies work. Microeconomics analyzes basic elements in the economy, including individual agents and markets, their interactions, and the outcomes of interactions, including unemployment of resource.',
+          url: '#',
+        },
+        {
+          id: 3,
+          icon: 'Medicine-tabs-v2.png',
+          img: 'Medicine.png',
+          title: 'Medicine',
+          text: 'Medicine is the science and practice of establishing the diagnosis, prognosis, treatment, and prevention of disease. Medicine encompasses a variety of health care practices evolved to maintain and restore health by the prevention and treatment of illness.',
+          url: '#',
+        },
+        {
+          id: 4,
+          icon: 'Computer-tabs-v2.png',
+          img: 'Computer-Science.png',
+          title: 'Computer Science',
+          text: 'Computer science is the study of processes that interact with data and that can be represented as data in the form of programs. It enables the use of algorithms to manipulate, store, and communicate digital information. A computer scientist studies the theory of computation software systems.',
+          url: '#',
+        },
+        {
+          id: 5,
+          icon: 'Palette-tabs-v2.png',
+          img: 'Graphic-Design.png',
+          title: 'Graphic Design',
+          text: 'Graphic design is the process of visual communication and problem-solving through the use of typography, photography and illustration. The field is considered a subset of visual communication and communication design, but sometimes the term ``graphic design`` is used synonymously.',
+          url: '#',
         },
       ]
     }
