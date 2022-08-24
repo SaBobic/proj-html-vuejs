@@ -58,8 +58,42 @@
         <h3>Faculties available at EduPrime</h3>
         <p>A single university with a load of course, tailored to satisfy any student's needs.</p>
         <BoxesSlider :items="facultiesSliderItems" />
+        <img src="./assets/svg/svg-0.svg" alt="">
       </section>
-
+      <div class="danger-wrapper">
+        <!-- University Year section -->
+        <section id="year">
+          <img class="icon" src="./assets/img/Clock-and-Bell.png" alt="">
+          <h3>University Year</h3>
+          <div>
+            <img src="./assets/img/Timeline-Item.png" alt="">
+            <div class="timeline-item-wrapper timeline-1">
+              <h6>Orientation</h6>
+              <p>First day of the university year, all students gather for the opening ceremony and then network with
+                others.</p>
+            </div>
+            <div class="timeline-item-wrapper timeline-2">
+              <h6>Demo Classes</h6>
+              <p>In the first week, students try to accommodate with the teaching style and choose their optional
+                courses.</p>
+            </div>
+            <div class="timeline-item-wrapper timeline-3">
+              <h6>Evaluation</h6>
+              <p>At the end of a semester, students take a general evaluation test for every subject they’re learning.
+              </p>
+            </div>
+            <div class="timeline-item-wrapper timeline-4">
+              <h6>Graduation Day</h6>
+              <p>On the day of graduation, all students gather for the ceremony and then network and party among others.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Upcoming Events section -->
+        <section id="upcoming">
+          <h3>Upcoming Events</h3>
+        </section>
+      </div>
     </main>
   </div>
 </template>
