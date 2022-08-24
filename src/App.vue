@@ -45,7 +45,7 @@
                 ranked
                 as the most versatile university in the world, thanks to the number of courses it provides.
               </p>
-              <MainButton anchor="Browse through courses" url="#" scheme="regular" />
+              <MainButton anchor="Browse through courses" url="#" scheme="regular success" />
             </div>
             <div class="col-6 d-flex justify-content-center align-items-center">
               <img class="grad-hat" src="./assets/img/Graduation-Illustration.png" alt="">
@@ -93,6 +93,7 @@
         <section id="upcoming">
           <img class="icon" src="./assets/img/upcoming-events-calendar-icon.png" alt="">
           <h3>Upcoming Events</h3>
+          <EventsCards btn-url="#" :items="eventsItems" />
         </section>
       </div>
     </main>
@@ -103,6 +104,7 @@
 import RowMenu from './components/RowMenu.vue';
 import MainButton from './components/MainButton.vue';
 import BoxesSlider from './components/BoxesSlider.vue';
+import EventsCards from './components/EventsCards.vue';
 
 
 export default {
@@ -194,13 +196,37 @@ export default {
           text: 'Graphic design is the process of visual communication and problem-solving through the use of typography, photography and illustration. The field is considered a subset of visual communication and communication design, but sometimes the term ``graphic design`` is used synonymously.',
           url: '#',
         },
-      ]
+      ],
+      eventsItems: [
+        {
+          id: 1,
+          title: 'Coaching Sessions',
+          date: '20 May 21:30 PM',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor[...]',
+          url: '#',
+        },
+        {
+          id: 2,
+          title: 'Coaching Sessions',
+          date: '24 Mar 18:00 PM',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor[...]',
+          url: '#',
+        },
+        {
+          id: 3,
+          title: 'Coaching Sessions',
+          date: '12 Feb 13:30 PM',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor[...]',
+          url: '#',
+        },
+      ],
     }
   },
   components: {
     RowMenu,
     MainButton,
     BoxesSlider,
+    EventsCards
   }
 }
 </script>

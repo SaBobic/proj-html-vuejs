@@ -23,17 +23,19 @@ export default {
     padding: 23px 45px;
     border-radius: 35px;
 
-    &.shadow {
-        box-shadow: 0px 0px 10px 1px #AEAEAE;
-    }
-
     &.regular {
         background-color: $primary;
 
 
-        &:hover {
+        &.success:hover {
             color: #fff;
             background-color: $success;
+        }
+
+        &.shadow:hover {
+            color: #fff;
+            background-color: $danger;
+            box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.2);
         }
     }
 
