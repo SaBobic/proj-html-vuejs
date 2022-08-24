@@ -96,6 +96,18 @@
           <EventsCards btn-url="#" :items="eventsItems" />
         </section>
       </div>
+      <img src="./assets/svg/svg-1.svg" alt="">
+      <!-- Courses section -->
+      <section class="container" id="courses">
+        <h3>Latest Courses</h3>
+        <CoursesCards :items="coursesItems" />
+      </section>
+      <!-- Infos section -->
+      <section class="container" id="infos">
+        <FloatingJumbo :items="infosItems" />
+      </section>
+      <!-- Newsletter section -->
+      <MainNewsletter />
     </main>
   </div>
 </template>
@@ -105,6 +117,9 @@ import RowMenu from './components/RowMenu.vue';
 import MainButton from './components/MainButton.vue';
 import BoxesSlider from './components/BoxesSlider.vue';
 import EventsCards from './components/EventsCards.vue';
+import CoursesCards from './components/CoursesCards.vue';
+import FloatingJumbo from './components/FloatingJumbo.vue';
+import MainNewsletter from './components/MainNewsletter.vue';
 
 
 export default {
@@ -220,13 +235,72 @@ export default {
           url: '#',
         },
       ],
+      coursesItems: [
+        {
+          id: 1,
+          icon: 'Decisions-icon.png',
+          name: 'Make Better Decisions',
+          teacher: 'James Colins',
+          price: '$21.00',
+          url: '#',
+        },
+        {
+          id: 2,
+          icon: 'Speaker-icon.png',
+          name: 'How to be a speaker',
+          teacher: 'James Colins',
+          price: 'Free',
+          url: '#',
+        },
+        {
+          id: 3,
+          icon: 'Network-icon.png',
+          name: 'Network Introductions',
+          teacher: 'James Colins',
+          price: 'Free',
+          url: '#',
+        },
+        {
+          id: 4,
+          icon: 'Brand-icon.png',
+          name: 'Brand Management',
+          teacher: 'James Colins',
+          price: 'Free',
+          url: '#',
+        },
+      ],
+      infosItems: [
+        {
+          id: 1,
+          direction: true,
+          icon: 'Exam-icon.png',
+          img: 'Exam-Illustration.png',
+          title: 'The most efficient examination method',
+          text: 'EduPrime has gathered teachers from around the globe to brainstorm in order to facilitate the evaluation of our students. Every teacher from our university has an influence on how students are evaluated at his/her subject.',
+          anchor: 'Discover the Method',
+          url: '#',
+        },
+        {
+          id: 2,
+          direction: false,
+          icon: 'Exam-icon-1.png',
+          img: 'Girl-Illustration.png',
+          title: 'Variable fees for international students',
+          text: 'EduPrime has gathered teachers from around the globe to brainstorm in order to facilitate the evaluation of our students. Every teacher from our university has an influence on how students are evaluated at his/her subject.',
+          anchor: 'List of fees',
+          url: '#',
+        },
+      ],
     }
   },
   components: {
     RowMenu,
     MainButton,
     BoxesSlider,
-    EventsCards
+    EventsCards,
+    CoursesCards,
+    FloatingJumbo,
+    MainNewsletter
   }
 }
 </script>
