@@ -91,6 +91,7 @@
         </section>
         <!-- Upcoming Events section -->
         <section id="upcoming">
+          <img class="icon" src="./assets/img/upcoming-events-calendar-icon.png" alt="">
           <h3>Upcoming Events</h3>
         </section>
       </div>

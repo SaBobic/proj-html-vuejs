@@ -113,52 +113,47 @@ main {
 
       .icon {
         height: 70px;
+        margin: 0 auto 20px;
+        display: block;
       }
     }
 
     #year {
       padding-top: 100px;
-
-      .icon {
-        margin: 0 auto 20px;
-        display: block;
-      }
+      margin-bottom: 50px;
 
       h3 {
         display: inline-block;
         background-color: $warning;
+        margin-bottom: 60px;
       }
 
-      div {
-        padding: 50px 0;
+      >div {
+        padding: 110px 0;
         position: relative;
 
-        img {
-          padding: 130px 0;
-        }
-
         .timeline-item-wrapper {
-          max-width: 300px;
+          max-width: 400px;
           position: absolute;
 
           &.timeline-1{
             bottom: 0;
-            left: 60px;
+            left: 15px;
           }
           
           &.timeline-2{
             top: 10px;
-            left: 290px;
+            left: 240px;
           }
           
           &.timeline-3{
             bottom: 0;
-            left: 510px;
+            left: 470px;
           }
           
           &.timeline-4{
             top: 10px;
-            left: 740px;
+            left: 690px;
           }
         }
       }
