@@ -1,12 +1,7 @@
 @import './vars';
 
 main {
-  &:hover {
-    background-color: $primary;
-    color: white;
-  }
-
-  .jumbotron {
+  #jumbotron {
     height: 800px;
     background-image: url('~@/assets/img/theme_slider2_bg-1.jpg');
     background-repeat: no-repeat;
@@ -61,5 +56,32 @@ main {
       bottom: 0;
       left: 0;
     }
+  }
+
+  #browse {
+    padding: 150px 0;
+    background-image: url('~@/assets/img/home-background.png');
+    background-repeat: no-repeat;
+    
+    .books {
+      height: 60px;
+    }
+    
+    h3 {
+      padding: 20px 0 30px;
+    }
+    
+    p {
+      margin-bottom: 40px;
+    }
+
+    .grad-hat {
+      height: 400px;
+    }
+  }
+  
+  #faculties {
+    padding: 150px 0;
+    text-align: center;
   }
 }

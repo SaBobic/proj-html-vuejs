@@ -14,7 +14,8 @@
     </header>
     <!-- Main -->
     <main>
-      <section class="jumbotron d-flex justify-content-center align-items-center">
+      <!-- Jumbotron section -->
+      <section class="d-flex justify-content-center align-items-center" id="jumbotron">
         <div class="jumbo-content">
           <h2>Key to your success</h2>
           <p>EduPrime is the most versatile Wordpress theme for educational purposes, showcasing universities,
@@ -31,12 +32,42 @@
         </div>
         <img src="./assets/img/Wave-1.png" alt="">
       </section>
+      <!-- Browse courses section -->
+      <section id="browse">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <img class="books" src="./assets/img/Books-icon.png" alt="">
+              <h3>Thousands of courses for any type of student</h3>
+              <p>At EduPrime, it doesn’t matter what domain you wish to pursue a career in. Here you can find a course
+                that
+                satisfies your needs within a click away and applies for a course in a matter of minutes. EduPrime is
+                ranked
+                as the most versatile university in the world, thanks to the number of courses it provides.
+              </p>
+              <MainButton anchor="Browse through courses" url="#" scheme="regular" />
+            </div>
+            <div class="col-6 d-flex justify-content-center align-items-center">
+              <img class="grad-hat" src="./assets/img/Graduation-Illustration.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Faculties section -->
+      <section id="faculties">
+        <h3>Faculties available at EduPrime</h3>
+        <p>A single university with a load of course, tailored to satisfy any student's needs.</p>
+        <BoxesSlider />
+      </section>
+
     </main>
   </div>
 </template>
 
 <script>
 import RowMenu from './components/RowMenu.vue';
+import MainButton from './components/MainButton.vue';
+import BoxesSlider from './components/BoxesSlider.vue';
 
 
 export default {
@@ -91,6 +122,8 @@ export default {
   },
   components: {
     RowMenu,
+    MainButton,
+    BoxesSlider,
   }
 }
 </script>
