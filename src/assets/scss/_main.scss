@@ -179,4 +179,17 @@ main {
   #infos {
     margin-bottom: 70px;
   }
+
+  #newsletter {
+    padding: 70px 0;
+    background-color: $danger;
+
+    .newsletter-text {
+        font-size: 35px;
+        line-height: 70px;
+        vertical-align: middle;
+        color: #fff;
+        font-family: 'Fredoka One', cursive;
+    }
+}
 }
