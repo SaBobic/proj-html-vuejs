@@ -125,6 +125,27 @@
           </div>
         </div>
       </section>
+      <!-- Partners section -->
+      <section id="partners">
+        <div class="container text-center">
+          <h3>Partners</h3>
+          <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to
+            corporate strategy.
+          </p>
+          <div>
+            <img class="c-pointer" src="./assets/img/partner-1.png" alt="">
+            <img class="c-pointer" src="./assets/img/partner-2.png" alt="">
+            <img class="c-pointer" src="./assets/img/partner-3.png" alt="">
+            <img class="c-pointer" src="./assets/img/partner-4.png" alt="">
+            <img class="c-pointer" src="./assets/img/partner-5.png" alt="">
+            <img class="c-pointer" src="./assets/img/partner-6.png" alt="">
+            <img class="c-pointer" src="./assets/img/partner-7.png" alt="">
+            <img class="c-pointer" src="./assets/img/partner-8.png" alt="">
+          </div>
+        </div>
+        <div class="bg-img">
+        </div>
+      </section>
     </main>
   </div>
 </template>

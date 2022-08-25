@@ -191,5 +191,33 @@ main {
         color: #fff;
         font-family: 'Fredoka One', cursive;
     }
-}
+  }
+
+  #partners {
+
+    h3 {
+      padding: 40px 0 30px;
+    }
+
+    p {
+      margin: 0 auto;
+      max-width: 550px;
+    }
+
+    .bg-img {
+      height: 300px;
+      background-color: #F7F8FA;
+      background-image: url('~@/assets/img/background-wave3.png');
+    }
+
+    img {
+      height: 50px;
+      margin: 30px 20px;
+      filter: opacity(0.3);
+
+      &:hover {
+        filter: none;
+      }
+    }
+  }
 }
