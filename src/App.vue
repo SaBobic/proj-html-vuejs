@@ -147,6 +147,51 @@
         </div>
       </section>
     </main>
+    <!-- Footer -->
+    <footer id="footer">
+      <nav class="container">
+        <div class="row">
+          <div class="col-4">
+            <p>EduPrime is the most versatile WordPress theme for educational purposes, showcasing universities,
+              courses, secondary schools etc.
+            </p>
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <div class="col">
+                <div>Get EduPrime</div>
+                <ul>
+                  <li><a href="">Request a website</a></li>
+                  <li><a href="">Browse Themes</a></li>
+                  <li><a href="">Payment options</a></li>
+                  <li><a href="">Support System</a></li>
+                  <li><a href="">Checkout</a></li>
+                  <li><a href="">Purchase Theme</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <div>Networking</div>
+                <ul>
+                  <li><a href="">Purchase Theme</a></li>
+                  <li><a href="">Our Benefits</a></li>
+                  <li><a href="">Out Team</a></li>
+                  <li><a href="">Our Services</a></li>
+                  <li><a href="">Other Products</a></li>
+                  <li><a href="">My account</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <BaseInput placeholder="Search..." />
+            <div>
+              <div>Search categories</div>
+            </div>
+            <div>ModelTheme. All rights reserved.</div>
+          </div>
+        </div>
+      </nav>
+    </footer>
   </div>
 </template>
 
@@ -338,7 +383,7 @@ export default {
     EventsCards,
     CoursesCards,
     FloatingJumbo,
-    BaseInput
+    BaseInput,
   }
 }
 </script>
