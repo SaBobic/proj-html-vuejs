@@ -120,7 +120,7 @@
           <div class="row">
             <div class="col-7 newsletter-text">Subscribe Now to Our Newsletter!</div>
             <div class="col-5 newsletter-input">
-              <BaseInput placeholder="Email address..." />
+              <BaseInput placeholder="Email address..." icon="fa-paper-plane" />
             </div>
           </div>
         </div>
@@ -183,7 +183,7 @@
             </div>
           </div>
           <div class="col-4">
-            <BaseInput placeholder="Search..." />
+            <BaseInput placeholder="Search..." icon="fa-magnifying-glass" />
             <div>
               <div>Search categories</div>
             </div>

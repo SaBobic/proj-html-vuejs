@@ -1,7 +1,9 @@
 <template>
     <div class="input-wrapper">
         <input type="text" :placeholder="placeholder" v-model="inputText" @keyup.enter="sendInput">
-        <div class="submit-button c-pointer" @click="sendInput"></div>
+        <div class="submit-button c-pointer" @click="sendInput">
+            <i :class="['fa-solid', icon, 'submit-icon']"></i>
+        </div>
     </div>
 </template>
 
@@ -9,6 +11,7 @@
 export default {
     name: 'BaseInput',
     props: {
+        icon: String,
         placeholder: String,
     },
     data() {
@@ -55,7 +58,7 @@ export default {
         top: 50%;
         transform: translateY(-50%);
 
-        &::before {
+        .submit-icon {
             font: var(--fa-font-solid);
             content: '\f1d8';
             font-size: 20px;
