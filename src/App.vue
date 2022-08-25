@@ -178,6 +178,10 @@
         </div>
       </nav>
     </footer>
+    <!-- Back to top arrow -->
+    <div :class="['c-pointer', { 'd-block': hasScrolled }]" ref="arrow" @click="scrollToTop" id="back-to-top-arrow">
+      <img src="./assets/img/back-to-top-arrow.svg" alt="">
+    </div>
   </div>
 </template>
 
@@ -199,6 +203,7 @@ export default {
   name: "App",
   data() {
     return {
+      hasScrolled: false,
       mainMenuItems: [
         {
           id: 1,
@@ -479,6 +484,21 @@ export default {
     VerticalMenu,
     SearchWithLabels,
     SocialLabels
+  },
+  methods: {
+    toggleArrow() {
+      if (window.scrollY > 300) {
+        this.hasScrolled = true;
+      } else {
+        this.hasScrolled = false;
+      }
+    },
+    scrollToTop() {
+      window.scrollTo({ top: 0 })
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.toggleArrow);
   }
 }
 </script>
