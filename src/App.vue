@@ -179,9 +179,15 @@
       </nav>
     </footer>
     <!-- Back to top arrow -->
-    <div :class="['c-pointer', { 'd-block': hasScrolled }]" ref="arrow" @click="scrollToTop" id="back-to-top-arrow">
+    <aside :class="['c-pointer', { 'd-block': hasScrolled }]" ref="arrow" @click="scrollToTop" id="back-to-top-arrow">
       <img src="./assets/img/back-to-top-arrow.svg" alt="">
-    </div>
+    </aside>
+    <!-- Theme info label -->
+    <aside id="theme-info">
+      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      <a href="#"><i class="fa-solid fa-book-open"></i></a>
+      <a href="#"><i class="fa-solid fa-life-ring"></i></a>
+    </aside>
   </div>
 </template>
 
