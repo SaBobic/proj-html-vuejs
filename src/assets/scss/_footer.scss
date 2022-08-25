@@ -5,31 +5,7 @@
     padding: 100px 0 80px;
     background-color: $danger;
 
-
     .footer-text {
         padding: 30px 0 15px;
     }
-
-
-.social-icon-wrapper{
-    display: inline-block;
-    border: 2px solid $primary;
-    border-radius: 50%;
-    padding: 22px;
-    position: relative;
-    margin-right: 7px;
-    
-    i {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    &:hover {
-        background-color: $primary;
-        color: #fff;
-    }
-}
-
 }

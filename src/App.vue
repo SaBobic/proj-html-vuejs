@@ -154,14 +154,9 @@
           <div class="col-4">
             <BaseLogo />
             <p class="footer-text">EduPrime is the most versatile WordPress theme for educational purposes, showcasing
-              universities,
-              courses, secondary schools etc.
+              universities, courses, secondary schools etc.
             </p>
-            <div>
-              <a class="social-icon-wrapper" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a class="social-icon-wrapper" href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a class="social-icon-wrapper" href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
+            <SocialLabels />
           </div>
           <div class="col-4">
             <div class="row">
@@ -195,6 +190,7 @@ import BaseInput from './components/BaseInput.vue';
 import VerticalMenu from './components/VerticalMenu.vue';
 import BaseLogo from './components/BaseLogo.vue';
 import SearchWithLabels from './components/SearchWithLabels.vue';
+import SocialLabels from './components/SocialLabels.vue';
 
 
 export default {
@@ -479,7 +475,8 @@ export default {
     FloatingJumbo,
     BaseInput,
     VerticalMenu,
-    SearchWithLabels
+    SearchWithLabels,
+    SocialLabels
   }
 }
 </script>
