@@ -4,7 +4,7 @@
     <header>
       <nav class="d-flex justify-content-between align-items-center">
         <div>
-          <img src="./assets/img/theme_eduprime_logo.png" alt="EduPrime Logo">
+          <BaseLogo />
         </div>
         <div class="d-flex align-items-center">
           <RowMenu :items="mainMenuItems" />
@@ -152,9 +152,16 @@
       <nav class="container">
         <div class="row">
           <div class="col-4">
-            <p>EduPrime is the most versatile WordPress theme for educational purposes, showcasing universities,
+            <BaseLogo />
+            <p class="footer-text">EduPrime is the most versatile WordPress theme for educational purposes, showcasing
+              universities,
               courses, secondary schools etc.
             </p>
+            <div>
+              <a class="social-icon-wrapper" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a class="social-icon-wrapper" href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a class="social-icon-wrapper" href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
           </div>
           <div class="col-4">
             <div class="row">
@@ -166,12 +173,10 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <BaseInput placeholder="Search..." icon="fa-magnifying-glass" />
-            <div>
-              <div>Search categories</div>
-            </div>
-            <div>ModelTheme. All rights reserved.</div>
+          <div class="col-4 text-end">
+            <BaseInput class="mb-4" placeholder="Search..." icon="fa-magnifying-glass" />
+            <SearchWithLabels title="Search categories" :items="CategoriesLabels" class="mb-3" />
+            <div class="text-primary">ModelTheme. All rights reserved.</div>
           </div>
         </div>
       </nav>
@@ -188,6 +193,8 @@ import CoursesCards from './components/CoursesCards.vue';
 import FloatingJumbo from './components/FloatingJumbo.vue';
 import BaseInput from './components/BaseInput.vue';
 import VerticalMenu from './components/VerticalMenu.vue';
+import BaseLogo from './components/BaseLogo.vue';
+import SearchWithLabels from './components/SearchWithLabels.vue';
 
 
 export default {
@@ -423,9 +430,47 @@ export default {
           url: "#",
         },
       ],
+      CategoriesLabels: [
+        {
+          id: 1,
+          anchor: "Economy",
+          url: "#",
+        },
+        {
+          id: 2,
+          anchor: "Design",
+          url: "#",
+        },
+        {
+          id: 3,
+          anchor: "Coaching",
+          url: "#",
+        },
+        {
+          id: 4,
+          anchor: "Business",
+          url: "#",
+        },
+        {
+          id: 5,
+          anchor: "Medicine",
+          url: "#",
+        },
+        {
+          id: 6,
+          anchor: "Law",
+          url: "#",
+        },
+        {
+          id: 7,
+          anchor: "Fitness",
+          url: "#",
+        },
+      ],
     };
   },
   components: {
+    BaseLogo,
     RowMenu,
     MainButton,
     BoxesSlider,
@@ -433,7 +478,8 @@ export default {
     CoursesCards,
     FloatingJumbo,
     BaseInput,
-    VerticalMenu
+    VerticalMenu,
+    SearchWithLabels
   }
 }
 </script>
