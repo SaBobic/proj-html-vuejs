@@ -1,7 +1,7 @@
 <template>
     <div class="input-wrapper">
-        <input type="text" :placeholder="placeholder">
-        <div class="submit-button c-pointer"></div>
+        <input type="text" :placeholder="placeholder" v-model="inputText" @keyup.enter="sendInput">
+        <div class="submit-button c-pointer" @click="sendInput"></div>
     </div>
 </template>
 
@@ -10,6 +10,18 @@ export default {
     name: 'BaseInput',
     props: {
         placeholder: String,
+    },
+    data() {
+        return {
+            inputText: '',
+        }
+    },
+    methods: {
+        sendInput() {
+            if (this.inputText) {
+                this.inputText = '';
+            }
+        }
     }
 }
 </script>
