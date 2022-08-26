@@ -1,5 +1,7 @@
 <template>
-    <img src="../assets/img/theme_eduprime_logo.png" alt="EduPrime Logo">
+    <a href="#">
+        <img src="../assets/img/theme_eduprime_logo.png" alt="EduPrime Logo">
+    </a>
 </template>
 
 <script>
