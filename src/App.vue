@@ -430,32 +430,32 @@ export default {
       NetworkingMenuItems: [
         {
           id: 1,
-          anchor: "Request a website",
+          anchor: "Purchase Theme",
           url: "#",
         },
         {
           id: 2,
-          anchor: "Browse Themes",
+          anchor: "Our Benefits",
           url: "#",
         },
         {
           id: 3,
-          anchor: "Payment options",
+          anchor: "Our Team",
           url: "#",
         },
         {
           id: 4,
-          anchor: "Support System",
+          anchor: "Our Services",
           url: "#",
         },
         {
           id: 5,
-          anchor: "Checkout",
+          anchor: "Other Products",
           url: "#",
         },
         {
           id: 6,
-          anchor: "Purchase Theme",
+          anchor: "My account",
           url: "#",
         },
       ],
