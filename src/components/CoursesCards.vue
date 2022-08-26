@@ -3,7 +3,7 @@
         <div v-for="item in items" :key="item.id" class="col-3">
             <div class="course-card text-center">
                 <a :href="item.url"><img class="course-icon mb-4" :src="require(`../assets/img/${item.icon}`)"
-                        alt=""></a>
+                        :alt="item.name"></a>
                 <h6><a class="course-name" href="#">{{ item.name }}</a></h6>
                 <div class="course-teacher mb-1"><i class="fa-regular fa-user"></i> Teacher:
                     <strong>{{ item.teacher }}</strong>

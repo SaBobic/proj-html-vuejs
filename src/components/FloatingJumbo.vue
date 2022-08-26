@@ -2,13 +2,13 @@
     <div>
         <div v-for="item in items" :key="item.id" :class="['row', { 'flex-row-reverse': item.direction === false }]">
             <div class="col-6">
-                <img :src="require(`../assets/img/${item.icon}`)" alt="" class="floating-jumbo-icon">
+                <img :src="require(`../assets/img/${item.icon}`)" :alt="item.title" class="floating-jumbo-icon">
                 <h3 class="floating-jumbo-title">{{ item.title }}</h3>
                 <p class="floating-jumbo-text">{{ item.text }}</p>
                 <MainButton :anchor="item.anchor" :url="item.url" scheme="regular danger" />
             </div>
             <div class="col-6 text-center align-items-center">
-                <img class="floating-jumbo-img" :src="require(`../assets/img/${item.img}`)" alt="">
+                <img class="floating-jumbo-img" :src="require(`../assets/img/${item.img}`)" :alt="item.title">
             </div>
         </div>
     </div>

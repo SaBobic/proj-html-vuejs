@@ -77,9 +77,10 @@ main {
 
     img {
       position: absolute;
-      width: 100%;
+      width: 2200px;
+      max-width: 2200px;
       bottom: 0;
-      left: 0;
+      left: -200px;
     }
   }
 
@@ -108,7 +109,6 @@ main {
   #faculties {
     padding-top: 50px;
     text-align: center;
-    position: relative;
 
     >h3{
       margin-bottom: 30px;
@@ -120,10 +120,8 @@ main {
       margin-bottom: 50px;
     }
 
-    >img {
-      position: absolute;
-      bottom: 0;
-      left: 0;
+    svg {
+      transform: translateY(5px);
     }
   }
 
@@ -184,8 +182,16 @@ main {
   }
 
   #upcoming {
-    padding-bottom: 100px;
     position: relative;
+
+    >div {
+      padding-bottom: 100px;
+    }
+
+  }
+
+  #wave-upcoming {
+    transform: translateY(-5px);
   }
 
   #courses {

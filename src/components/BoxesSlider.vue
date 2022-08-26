@@ -5,7 +5,7 @@
                 class="box c-pointer d-flex justify-content-center align-items-center"
                 :class="{ 'clicked': currentActiveIndex === item.id }" @click="currentActiveIndex = item.id">
                 <figure class="box-content">
-                    <img :src="require(`../assets/img/${item.icon}`)" alt="">
+                    <img :src="require(`../assets/img/${item.icon}`)" :alt="item.title">
                     <figcaption>{{ item.title }}</figcaption>
                 </figure>
             </li>
@@ -16,7 +16,7 @@
                 :class="{ 'd-block': currentActiveIndex === item.id }">
                 <div class="row">
                     <div class="col-6">
-                        <img :src="require(`../assets/img/${item.img}`)" alt="">
+                        <img :src="require(`../assets/img/${item.img}`)" :alt="item.title">
                     </div>
                     <div class="slider-right col-6">
                         <h4>{{ item.title }}</h4>

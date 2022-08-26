@@ -38,7 +38,7 @@
         <div class="container">
           <div class="row">
             <div class="col-6">
-              <img class="books" src="./assets/img/Books-icon.png" alt="">
+              <img class="books" src="./assets/img/Books-icon.png" alt="Books icon">
               <h3>Thousands of courses for any type of student</h3>
               <p>At EduPrime, it doesn’t matter what domain you wish to pursue a career in. Here you can find a course
                 that
@@ -49,7 +49,7 @@
               <MainButton anchor="Browse through courses" url="#" scheme="regular success" />
             </div>
             <div class="col-6 d-flex justify-content-center align-items-center">
-              <img class="grad-hat" src="./assets/img/Graduation-Illustration.png" alt="">
+              <img class="grad-hat" src="./assets/img/Graduation-Illustration.png" alt="Graduation hat">
             </div>
           </div>
         </div>
@@ -68,10 +68,10 @@
       <!-- University Year section -->
       <section class="bg-danger" id="year">
         <div>
-          <img class="icon" src="./assets/img/Clock-and-Bell.png" alt="">
+          <img class="icon" src="./assets/img/Clock-and-Bell.png" alt="Clock and bell icon">
           <h3>University Year</h3>
           <div>
-            <img src="./assets/img/Timeline-Item.png" alt="">
+            <img src="./assets/img/Timeline-Item.png" alt="Timeline">
             <div class="timeline-item-wrapper timeline-1">
               <h6>Orientation</h6>
               <p>First day of the university year, all students gather for the opening ceremony and then network with
@@ -98,12 +98,13 @@
       <!-- Upcoming Events section -->
       <section class="bg-danger" id="upcoming">
         <div>
-          <img class="icon" src="./assets/img/upcoming-events-calendar-icon.png" alt="">
+          <img class="icon" src="./assets/img/upcoming-events-calendar-icon.png" alt="Calendar icon">
           <h3>Upcoming Events</h3>
           <EventsCards btn-url="#" :items="eventsItems" />
         </div>
       </section>
-      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="2821.333" height="177.333" viewBox="0 0 2116 133">
+      <svg id="wave-upcoming" version="1.0" xmlns="http://www.w3.org/2000/svg" width="2821.333" height="177.333"
+        viewBox="0 0 2116 133">
         <path class="st0"
           d="M6 .4c0 .8 22.8 14.1 35.5 20.7 35.6 18.6 68.6 26.7 96.8 23.9 15.1-1.5 29.4-4.8 54.3-12.6 40-12.5 57.6-16.1 84.4-17.1 45.6-1.6 98.7 10.6 160.6 37.1 7.1 3.1 14.2 5.6 15.8 5.6 1.5 0 17.3-1.6 35-3.5 85-9.2 166.6-15.4 259.1-19.7 36.9-1.7 181.6-1.7 215 0 89.4 4.7 163.2 12.9 226.5 25.4 13.3 2.6 24.2 4.3 28.5 4.2 3.9 0 19.4-1.4 34.5-3.2 60.9-7 102.4-9.6 157-9.6 94.2 0 162.8 9.8 244 34.9 44.3 13.6 79.7 21.3 119.4 25.9l13 1.5 30.5-20.3c85.2-56.8 141.9-83.5 181.6-85.3 28.4-1.3 43 7.9 57 35.7 7.9 15.7 12 19.4 19.5 17.1 6.8-2 15.6-8.9 28.9-22.7l13.1-13.6V0H1061C480.8 0 6 .2 6 .4z"
           fill="#20AD96" />
@@ -136,14 +137,8 @@
             corporate strategy.
           </p>
           <div>
-            <img class="c-pointer" src="./assets/img/partner-1.png" alt="">
-            <img class="c-pointer" src="./assets/img/partner-2.png" alt="">
-            <img class="c-pointer" src="./assets/img/partner-3.png" alt="">
-            <img class="c-pointer" src="./assets/img/partner-4.png" alt="">
-            <img class="c-pointer" src="./assets/img/partner-5.png" alt="">
-            <img class="c-pointer" src="./assets/img/partner-6.png" alt="">
-            <img class="c-pointer" src="./assets/img/partner-7.png" alt="">
-            <img class="c-pointer" src="./assets/img/partner-8.png" alt="">
+            <img v-for="n in 8" :key="n" class="c-pointer" :src="require(`./assets/img/partner-${n}.png`)"
+              :alt="`Partner ${n}`">
           </div>
         </div>
         <div id="partners-bg-img">
@@ -181,7 +176,7 @@
     </footer>
     <!-- Back to top arrow -->
     <aside :class="['c-pointer', { 'd-block': hasScrolled }]" ref="arrow" @click="scrollToTop" id="back-to-top-arrow">
-      <img src="./assets/img/back-to-top-arrow.svg" alt="">
+      <img src="./assets/img/back-to-top-arrow.svg" alt="Back to top arrow">
     </aside>
     <!-- Theme info label -->
     <aside id="theme-info">
