@@ -58,7 +58,8 @@ figure {
     .box {
         font-family: 'Fredoka One', cursive;
         color: $danger;
-        padding: 40px 70px;
+        width: 230px;
+        height: 200px;
         border: 1px solid #F0F0F0;
         position: relative;
 

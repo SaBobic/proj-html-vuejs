@@ -4,6 +4,7 @@ main {
   #jumbotron {
     height: 800px;
     background-image: url('~@/assets/img/theme_slider2_bg-1.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
@@ -77,10 +78,11 @@ main {
 
     img {
       position: absolute;
-      width: 2200px;
-      max-width: 2200px;
+      width: 2300px;
+      max-width: 2300px;
       bottom: 0;
-      left: -200px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
