@@ -1,17 +1,6 @@
 <template>
   <div id="app">
-    <!-- Header -->
-    <header>
-      <nav class="d-flex justify-content-between align-items-center">
-        <div>
-          <BaseLogo />
-        </div>
-        <div class="d-flex align-items-center">
-          <RowMenu :items="mainMenuItems" />
-          <a class="btn-primary" id="header-button" href="#">VIEW COURSES</a>
-        </div>
-      </nav>
-    </header>
+    <MainHeader :main-menu-items="mainMenuItems" />
     <!-- Main -->
     <main>
       <!-- Jumbotron section -->
@@ -155,15 +144,14 @@
 </template>
 
 <script>
-import RowMenu from './components/RowMenu.vue';
 import MainButton from './components/MainButton.vue';
 import BoxesSlider from './components/BoxesSlider.vue';
 import EventsCards from './components/EventsCards.vue';
 import CoursesCards from './components/CoursesCards.vue';
 import FloatingJumbo from './components/FloatingJumbo.vue';
 import BaseInput from './components/BaseInput.vue';
-import BaseLogo from './components/BaseLogo.vue';
 import MainFooter from './components/MainFooter.vue';
+import MainHeader from './components/MainHeader.vue';
 
 
 export default {
@@ -441,14 +429,13 @@ export default {
   },
   components: {
     MainFooter,
-    BaseLogo,
-    RowMenu,
     MainButton,
     BoxesSlider,
     EventsCards,
     CoursesCards,
     FloatingJumbo,
     BaseInput,
+    MainHeader
   },
   methods: {
     toggleArrow() {
