@@ -513,7 +513,7 @@ export default {
   },
   methods: {
     toggleArrow() {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 700) {
         this.hasScrolled = true;
       } else {
         this.hasScrolled = false;
