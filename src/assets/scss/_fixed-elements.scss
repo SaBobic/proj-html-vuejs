@@ -81,7 +81,7 @@
         }
 
         #svg_modeltheme_logo {
-            fill: #69de89;
+            fill: $fillGreenLight;
         }
 
         &:hover {
@@ -89,11 +89,11 @@
         }
         
         .mt-env-logo-svg {
-            fill: #82B541;
+            fill: $fillGreen;
         }
         
         &.purchase-label:hover{
-            background-color: #82B541;
+            background-color: $fillGreen;
             
             .mt-env-logo-svg {
                 fill: $secondary;
@@ -101,7 +101,7 @@
         }
         
         &.related-label:hover{
-            background-color: #d77864;
+            background-color: $danger;
         }
     }
 }
