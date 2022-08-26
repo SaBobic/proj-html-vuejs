@@ -31,7 +31,6 @@
           </a>
         </div>
         <img src="./assets/img/Wave-1.png" alt="Wave 1">
-        <aside id="purchase-eduprime-label">Purchase EduPrime on Envato Market</aside>
       </section>
       <!-- Browse courses section -->
       <section id="browse">
